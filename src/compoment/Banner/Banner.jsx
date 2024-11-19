@@ -3,7 +3,6 @@ import Button from '../Button/Button';
 
 const Banner = () => {
     return (
-
         <div className=" bg-purple-50 w-screen flex justify-center items-center">
             <div className='grid grid-cols-1 md:grid-cols-2 text-center md:text-left  items-center lg:max-w-[1000px] mx-auto'>
                 <div>
@@ -17,9 +16,7 @@ const Banner = () => {
                 <div>
                     <img src="/src/assets/images/user.png" alt="" />
                 </div>
-
             </div>
-
         </div>
 
     );
