@@ -1,15 +1,16 @@
-import Banner from "../Banner/Banner";
-
+import { NavLink } from "react-router-dom";
+import "./Header.css"
+import Button from "../Button/Button";
 const Header = () => {
 
     const links = <>
-        <li><a>Statics</a></li>
-        <li><a>Applied job</a></li>
-        <li><a>Blog</a></li>
+        <li><NavLink to="">Statics</NavLink></li>
+        <li><NavLink to={"applied"} >Applied job</NavLink></li>
+        <li><NavLink to={"Blog"}>Blog</NavLink></li>
     </>
     return (
-        <div>
-            <div className="navbar max-w-[1000px] text-black mx-auto bg-white">
+        <div className="bg-[#cfbffa28]">
+            <div className="navbar max-w-[1000px] text-black mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,7 +29,7 @@ const Header = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content  bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             {
                                 links
                             }
@@ -46,10 +47,10 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-gradient-to-r from-[#7E90FE]  to-[#9873FF] text-white border-white">Start Applying</a>
+                    <Button>Applying Now</Button>
+
                 </div>
             </div>
-            <Banner></Banner>
         </div>
     );
 };
