@@ -1,9 +1,9 @@
 
-const TextWithIcon = ({ text, icon }) => {
+const TextWithIcon = ({ text, icon, texttitle }) => {
     return (
-        <div className="flex P-2 items-center gap-1">
+        <div className="flex P-2 items-center gap-2">
             <img src={icon}></img>
-            <p className="text-[14px]">{text}</p>
+            <p className="text-[14px]"><span className="text-[#181818] font-medium">{texttitle}</span> {text}</p>
 
         </div>
     );
