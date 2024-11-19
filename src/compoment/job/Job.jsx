@@ -1,5 +1,6 @@
 import React from 'react';
 import TextWithIcon from '../../Utilities/textwithIcon/textwithIcon';
+import Button from '../Button/Button';
 
 const Job = ({ Jobitem }) => {
 
@@ -16,8 +17,10 @@ const Job = ({ Jobitem }) => {
             </div>
             <div className='mt-4 flex gap-4'>
                 <TextWithIcon text={location} icon={"/src/assets/icons/Location2.png"}></TextWithIcon>
-                <TextWithIcon text={location} icon={"/src/assets/icons/money.png"}></TextWithIcon>
+                <TextWithIcon text={salary} icon={"/src/assets/icons/money.png"}></TextWithIcon>
             </div>
+
+            <div className='mt-5'> <Button>View Details</Button></div>
 
 
 

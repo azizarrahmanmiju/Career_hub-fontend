@@ -18,7 +18,7 @@ const Featurejobs = () => {
 
 
     return (
-        <div className='grid '>
+        <div className='grid justify-center'>
             <TitandDesc title={"Feature Jobs"} description={"Explore thousands of job opportunities with all the information you need. Its your future"}></TitandDesc>
             <div className='grid grid-cols-2 mt-[50px] justify-center w-[900px] mx-auto'>
                 {

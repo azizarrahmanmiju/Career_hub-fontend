@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
 
-        <footer className=" bg-purple-100 text-base-content p-10 ">
-            <div className='footer w-[1000px] mx-auto text-black'>
+        <footer className=" bg-[#1a1919] text-base-content p-10 mt-10">
+            <div className='footer w-[1000px] mx-auto text-white'>
 
                 <aside>
                     <svg
