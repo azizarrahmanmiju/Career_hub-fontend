@@ -10,7 +10,7 @@ const Featurejobs = () => {
     useEffect(() => {
         fetch('jobs.json')
             .then(response => response.json())
-            .then(data => setJobs(data.slice(0, 4)));
+            .then(data => setJobs(data));
         console.log(jobs);
 
     }, [])
