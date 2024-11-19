@@ -1,10 +1,18 @@
 import React from 'react';
 import TextWithIcon from '../../Utilities/textwithIcon/textwithIcon';
 import Button from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Job = ({ Jobitem }) => {
 
-    const { company_name, logo, job_title, remote_or_onsite, location, job_type, salary, } = Jobitem;
+    const { id, company_name, logo, job_title, remote_or_onsite, location, job_type, salary, } = Jobitem;
+
+    const navigate = useNavigate();
+    const onclick = () => {
+        navigate(`/job/${id}`);
+        console.log(id);
+    };
+
     return (
         <div className='border p-4 rounded-lg m-2'>
 
@@ -20,7 +28,7 @@ const Job = ({ Jobitem }) => {
                 <TextWithIcon text={salary} icon={"/src/assets/icons/money.png"}></TextWithIcon>
             </div>
 
-            <div className='mt-5'> <Button>View Details</Button></div>
+            <div onClick={onclick} className='mt-5'> <Button>View Details</Button></div>
 
         </div>
     );

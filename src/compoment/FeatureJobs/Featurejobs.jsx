@@ -14,7 +14,6 @@ const Featurejobs = () => {
             .then(response => response.json())
             .then(data => setJobs(data));
         console.log(jobs);
-
     }, [])
 
     const onclick = () => {
@@ -32,7 +31,7 @@ const Featurejobs = () => {
                 {
                     jobs.slice(0, jobsize).map(job => {
                         return (
-                            <Job key={job.div} Jobitem={job}></Job>
+                            <Job key={job.id} Jobitem={job}></Job>
                         )
                     })
                 }
