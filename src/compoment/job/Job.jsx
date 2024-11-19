@@ -22,8 +22,6 @@ const Job = ({ Jobitem }) => {
 
             <div className='mt-5'> <Button>View Details</Button></div>
 
-
-
         </div>
     );
 };

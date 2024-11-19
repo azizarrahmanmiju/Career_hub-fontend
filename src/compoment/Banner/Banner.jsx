@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 
 const Banner = () => {
     return (
-        <div className=" bg-purple-50 w-screen flex justify-center items-center">
+        <div className=" bg-purple-50 w-screen flex justify-center items-center pt-10">
             <div className='grid grid-cols-1 md:grid-cols-2 text-center md:text-left  items-center lg:max-w-[1000px] mx-auto'>
                 <div>
                     <h2 className='text-4xl text-poppins lg:text-6xl font-bold items-center'>

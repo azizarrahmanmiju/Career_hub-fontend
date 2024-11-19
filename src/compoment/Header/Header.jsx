@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const Header = () => {
 
     const links = <>
-        <li><NavLink to="">Statics</NavLink></li>
+        <li><NavLink className={"testclass"} to="/">Statics</NavLink></li>
         <li><NavLink to={"applied"} >Applied job</NavLink></li>
         <li><NavLink to={"Blog"}>Blog</NavLink></li>
     </>
@@ -29,7 +29,7 @@ const Header = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content  bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="dropdown-content  bg-white  mt-3 w-52 p-2 shadow">
                             {
                                 links
                             }
