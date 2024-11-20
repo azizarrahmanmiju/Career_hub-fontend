@@ -28,7 +28,8 @@ const Job = ({ Jobitem }) => {
                 <TextWithIcon text={salary} icon={"/src/assets/icons/money.png"}></TextWithIcon>
             </div>
 
-            <div onClick={onclick} className='mt-5'> <Button>View Details</Button></div>
+            <div onClick={onclick} className='mt-5 w-40'>
+                <Button>View Details</Button></div>
 
         </div>
     );

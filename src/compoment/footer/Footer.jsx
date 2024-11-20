@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
 
-        <footer className=" bg-[#1A1919] text-base-content p-10 mt-20">
-            <div className='footer w-[1000px] mx-auto text-white'>
+        <footer className=" bg-[#1A1919] text-base-content  mt-20 pt-10 pl-10 pr-10 pb-20">
+            <div className='footer  mx-auto text-white'>
 
                 <aside>
                     <img src='/src/assets/logo/airbnb.png' />
