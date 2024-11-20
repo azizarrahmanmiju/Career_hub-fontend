@@ -42,8 +42,6 @@ const Jobdetails = () => {
                         <TextWithIcon icon={"/src/assets/icons/location2.png"} text={jobdetails[0].contact_information.address} texttitle={"address: "}></TextWithIcon>
 
 
-
-
                     </div>
                     <div className=' w-full'>
                         <Button >Apply Now</Button>
